@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://heisenbergv.github.io/sitemap.xml
