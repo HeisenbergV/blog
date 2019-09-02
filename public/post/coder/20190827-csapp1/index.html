@@ -671,14 +671,14 @@
 <li>E表示指数位</li>
 </ul>
 
-<p><img src="../../../static/img/csapp-float.png" alt="image" /></p>
+<p><img src="../../../img/csapp-float.png" alt="image" /></p>
 
 <p>M：二进制中M的第一位总是1，所以IEEE 754规定，这个数字可以忽略，在运算的时候再添上。这样对于32位浮点数，就有24位有效数字，64位则有53位。增加了表示范围
 E：E 是无符号的，如何表示负数，也就是 2^-n 这种形式？ 实际的E表示为 E = e - Baic。其中e是无符号数，Baic=2^(k-1)-1。以32位浮点数为例，e的范围在0~255，Baic = 127，E的范围就是-126~+127。</p>
 
 <h4 id="阶码-e-的值决定了-这个数是规格化-非规格化或者特殊值">阶码（E）的值决定了 这个数是规格化，非规格化或者特殊值。</h4>
 
-<p><img src="../../../static/img/csapp-float2.png" alt="image" /></p>
+<p><img src="../../../img/csapp-float2.png" alt="image" /></p>
 
 <ul>
 <li>规格化：当阶码域不全为0时，或者不全为1时，得到真实值，再将有效数字M前加上第一位的1</li>
