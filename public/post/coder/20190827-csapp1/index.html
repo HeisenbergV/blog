@@ -50,11 +50,11 @@
 
 <meta itemprop="datePublished" content="2019-08-27T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-08-27T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2775">
+<meta itemprop="wordCount" content="2754">
 
 
 
-<meta itemprop="keywords" content="计算机," />
+<meta itemprop="keywords" content="技术,csapp," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CSAPP(1) - 信息的表示和处理"/>
 <meta name="twitter:description" content="计算机存的什么 计算机存储的是二进制，每一位存储的是0或1。大多数计算机使用1字节（也就是8位），作为最小可寻址的内存单位。 每个字节都有一个唯"/>
@@ -158,9 +158,8 @@
 </ul></li>
 <li><a href="#浮点数的表示">浮点数的表示</a>
 <ul>
-<li><a href="#移码">移码</a></li>
 <li><a href="#浮点数在二进制中的存储方式">浮点数在二进制中的存储方式</a></li>
-<li><a href="#规范化值">规范化值</a></li>
+<li><a href="#阶码-e-的值决定了-这个数是规格化-非规格化或者特殊值">阶码（E）的值决定了 这个数是规格化，非规格化或者特殊值。</a></li>
 </ul></li>
 <li><a href="#大小端">大小端</a></li>
 <li><a href="#总结">总结</a></li>
@@ -455,14 +454,7 @@
 
 <p>在c语言中整型加上unsigned来表示无符号整数。这样的话补码[1000，01111] 的范围是-8 ~ 7，去掉符号位的话就是[0000，1111] 0~15。</p>
 
-<p>无符号转换成有符号公式：</p>
-
-<p>$$
-x=\begin{cases}
-x,\quad x&lt; 2^w/2 \<br />
-x-2^w,\quad x\geq 2^w/2
-\end{cases}
-$$</p>
+<p>无符号转换成有符号</p>
 
 <table>
 <thead>
@@ -491,14 +483,7 @@ $$</p>
 </tbody>
 </table>
 
-<p>有符号转换成无符号公式：</p>
-
-<p>$$
-x=\begin{cases}
-x+2^w,\quad x&lt; 0 \<br />
-x,\quad x\geq 0
-\end{cases}
-$$</p>
+<p>有符号转换成无符号</p>
 
 <table>
 <thead>
@@ -670,41 +655,36 @@ $$</p>
 
 <h3 id="浮点数的表示">浮点数的表示</h3>
 
-<h4 id="移码">移码</h4>
-
-<p>在说浮点数之前先介绍下移码。移码就是在补码的基础上将符号位取反（无论正负数）
-计算浮点数：通过移动小数点，让它们一致，之后，把数值部分相加</p>
-
 <h4 id="浮点数在二进制中的存储方式">浮点数在二进制中的存储方式</h4>
 
-<p>十进制中 +100.05 可以用科学计数法表示成 +1.0005*10^2。这样的话我们就可以根据科学计数法，在二进制中存储了。</p>
+<p>十进制中 +100.05 可以用科学计数法表示成 +1.0005*$10^2$。这样的话我们就可以根据科学计数法，在二进制中存储了。</p>
 
-<p>将位分成三份存储上面 的值：符号位(0)，整数位（10005），阶数位（2）。最后因为是二进制，计算的时候把10^n改成2^n。</p>
+<p>将位分成三份存储上面 的值：符号位(0)，整数位（10005），阶数位（2）。最后因为是二进制，计算的时候把$10^n$改成$2^n$。</p>
 
 <p>根据国际标准IEEE 754，任意一个二进制浮点数V可以表示成下面的形式：</p>
 
-<p>V=(−1)^s𝑀*2^𝐸</p>
+<p>V=$(−1)^s$<em>𝑀</em>$2^E$</p>
 
 <ul>
-<li>(-1)^s表示符号位，当s=0，V为正数；当s=1，V为负数。</li>
+<li>$(-1)^s$表示符号位，当s=0，V为正数；当s=1，V为负数。</li>
 <li>M表示有效数字，大于等于1，小于2。</li>
 <li>E表示指数位</li>
 </ul>
 
-<p>IEEE 754规定，对于32位的浮点数，最高的1位是符号位s，接着的8位是指数E，剩下的23位为有效数字M</p>
-
-<p>s-|&mdash;E&mdash;&ndash;|&mdash;&mdash;&mdash;&ndash;M&mdash;&mdash;&mdash;&mdash;|</p>
-
-<p>对于64位的浮点数，最高的1位是符号位s，接着的11位是指数E，剩下的52位为有效数字M</p>
-
-<p>s-|&mdash;&mdash;E&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;M&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|</p>
+<p><img src="../../../static/img/csapp-float.png" alt="image" /></p>
 
 <p>M：二进制中M的第一位总是1，所以IEEE 754规定，这个数字可以忽略，在运算的时候再添上。这样对于32位浮点数，就有24位有效数字，64位则有53位。增加了表示范围
 E：E 是无符号的，如何表示负数，也就是 2^-n 这种形式？ 实际的E表示为 E = e - Baic。其中e是无符号数，Baic=2^(k-1)-1。以32位浮点数为例，e的范围在0~255，Baic = 127，E的范围就是-126~+127。</p>
 
-<h4 id="规范化值">规范化值</h4>
+<h4 id="阶码-e-的值决定了-这个数是规格化-非规格化或者特殊值">阶码（E）的值决定了 这个数是规格化，非规格化或者特殊值。</h4>
 
-<p>当E 阶码域全为0时，</p>
+<p><img src="../../../static/img/csapp-float2.png" alt="image" /></p>
+
+<ul>
+<li>规格化：当阶码域不全为0时，或者不全为1时，得到真实值，再将有效数字M前加上第一位的1</li>
+<li>非规格化：阶码域全为0，小数域不再补上1，这样做是为了表示±0，以及接近于0的很小的数字</li>
+<li>特殊值：当阶码全为1，小数域全为0的时候，根据s的值，表示为 + \infty，- \infty。如果小数域不全为0，则为NaN</li>
+</ul>
 
 <h3 id="大小端">大小端</h3>
 
@@ -781,11 +761,12 @@ E：E 是无符号的，如何表示负数，也就是 2^-n 这种形式？ 实�
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+          <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+          <a href="/tags/csapp/">csapp</a>
           </div>
       <nav class="post-nav">
         
-        <a class="next" href="/post/lighter/20190815-piano/">
+        <a class="next" href="/post/think/20190815-piano/">
             <span class="next-text nav-default">钢琴入门练习</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>

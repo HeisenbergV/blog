@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>计算机 on heisenberg blog</title>
-    <link>https://heisenbergv.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-    <description>Recent content in 计算机 on heisenberg blog</description>
+    <title>csapp on heisenberg blog</title>
+    <link>https://heisenbergv.github.io/tags/csapp/</link>
+    <description>Recent content in csapp on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://heisenbergv.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heisenbergv.github.io/tags/csapp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
