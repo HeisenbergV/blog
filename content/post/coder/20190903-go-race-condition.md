@@ -343,3 +343,5 @@ func NewSpinLock() sync.Locker {
 
 ## 参考
 [go语言圣经](https://docs.hacknode.org/gopl-zh/ch9/ch9.html)
+
+> 借真理之力在我有生之年得以征服世界。 -- 《v字仇杀队》
