@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coder on heisenberg blog</title>
-    <link>https://heisenbergv.github.io/categories/coder/</link>
-    <description>Recent content in coder on heisenberg blog</description>
+    <title>go on heisenberg blog</title>
+    <link>https://heisenbergv.github.io/tags/go/</link>
+    <description>Recent content in go on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://heisenbergv.github.io/categories/coder/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heisenbergv.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://heisenbergv.github.io/post/coder/20190903-go-race-condition/</guid>
       <description>定义 单处理器中低优先级的进程被高优先级的进程抢占，同时他们访问同一块共享资源 多处理器中，CPU1的进程、CPU2的进程同时访问同一块共享资源</description>
-    </item>
-    
-    <item>
-      <title>CSAPP(1) - 信息的表示和处理</title>
-      <link>https://heisenbergv.github.io/post/coder/20190827-csapp1/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://heisenbergv.github.io/post/coder/20190827-csapp1/</guid>
-      <description>计算机存的什么 计算机存储的是二进制，每一位存储的是0或1。大多数计算机使用1字节（也就是8位），作为最小可寻址的内存单位。 每个字节都有一个唯</description>
     </item>
     
   </channel>

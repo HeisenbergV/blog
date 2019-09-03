@@ -6,10 +6,19 @@
     <description>Recent content on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://heisenbergv.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go 竞态问题</title>
+      <link>https://heisenbergv.github.io/post/coder/20190903-go-race-condition/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/post/coder/20190903-go-race-condition/</guid>
+      <description>定义 单处理器中低优先级的进程被高优先级的进程抢占，同时他们访问同一块共享资源 多处理器中，CPU1的进程、CPU2的进程同时访问同一块共享资源</description>
+    </item>
     
     <item>
       <title>CSAPP(1) - 信息的表示和处理</title>
