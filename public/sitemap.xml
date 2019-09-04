@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/post/coder/20190903-go-race-condition/</loc>
+    <loc>https://heisenbergv.github.io/post/2019/20190903-go-race-condition/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,38 +45,13 @@
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/categories/think/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://heisenbergv.github.io/tags/%E5%9F%BA%E9%87%91/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://heisenbergv.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/post/think/20190905-%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://heisenbergv.github.io/tags/%E7%90%86%E8%B4%A2/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://heisenbergv.github.io/post/coder/20190827-csapp1/</loc>
+    <loc>https://heisenbergv.github.io/post/2019/20190827-csapp1/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -89,13 +64,19 @@
   </url>
   
   <url>
+    <loc>https://heisenbergv.github.io/categories/think/</loc>
+    <lastmod>2019-08-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://heisenbergv.github.io/tags/%E9%92%A2%E7%90%B4/</loc>
     <lastmod>2019-08-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/post/think/20190815-piano/</loc>
+    <loc>https://heisenbergv.github.io/post/2019/20190815-piano/</loc>
     <lastmod>2019-08-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -114,14 +95,14 @@
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/post/think/20190821-%E6%9A%97%E6%97%B6%E9%97%B4/</loc>
+    <loc>https://heisenbergv.github.io/post/2019/20190821-%E6%9A%97%E6%97%B6%E9%97%B4/</loc>
     <lastmod>2019-08-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/post/think/2019-plan/</loc>
+    <loc>https://heisenbergv.github.io/post/2019/2019-plan/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
