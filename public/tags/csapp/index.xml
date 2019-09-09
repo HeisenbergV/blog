@@ -6,13 +6,22 @@
     <description>Recent content in csapp on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://heisenbergv.github.io/tags/csapp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CSAPP(1) - 信息的表示和处理</title>
+      <title>读CSAPP(2) - 程序性能优化</title>
+      <link>https://heisenbergv.github.io/post/2019/20190905-csapp2/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/post/2019/20190905-csapp2/</guid>
+      <description>高效的程序需要做到 合适的数据结构与算法 编写出编译器能够有效优化以转换成高效可执行代码的源码。 将运算量特别大的计算，可以分成多部分，这些部分可</description>
+    </item>
+    
+    <item>
+      <title>读CSAPP(1) - 信息的表示和处理</title>
       <link>https://heisenbergv.github.io/post/2019/20190827-csapp1/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
