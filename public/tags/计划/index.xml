@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lighter on heisenberg blog</title>
-    <link>https://heisenbergv.github.io/categories/lighter/</link>
-    <description>Recent content in lighter on heisenberg blog</description>
+    <title>计划 on heisenberg blog</title>
+    <link>https://heisenbergv.github.io/tags/%E8%AE%A1%E5%88%92/</link>
+    <description>Recent content in 计划 on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://heisenbergv.github.io/categories/lighter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heisenbergv.github.io/tags/%E8%AE%A1%E5%88%92/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>钢琴入门练习</title>
-      <link>https://heisenbergv.github.io/post/2019/20190815-piano/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://heisenbergv.github.io/post/2019/20190815-piano/</guid>
-      <description>练习曲1 提取码: gu7d</description>
-    </item>
-    
-    <item>
-      <title>暗时间</title>
-      <link>https://heisenbergv.github.io/post/2019/20190821-%E6%9A%97%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://heisenbergv.github.io/post/2019/20190821-%E6%9A%97%E6%97%B6%E9%97%B4/</guid>
-      <description>学习方面 最近看《暗时间》这本书，感觉很不错。 投入的时间≠实际时间，要用高效的方法学习，充分利用暗时间，学习过程要不断思考推断，而不是一味的死</description>
-    </item>
     
     <item>
       <title>2019年下半年计划</title>

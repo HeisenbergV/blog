@@ -6,17 +6,26 @@
     <description>Recent content in coder on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://heisenbergv.github.io/categories/coder/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>读CSAPP(3) - 存储器层次结构</title>
+      <link>https://heisenbergv.github.io/post/2019/20190915-csapp3/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/post/2019/20190915-csapp3/</guid>
+      <description>了解硬件 随机访问存储器（Random-Access Memory，RAM） RAM分两类，静态（SRAM）的和动态的（DRAM），SRAM要比D</description>
+    </item>
+    
+    <item>
       <title>读CSAPP(2) - 程序性能优化</title>
-      <link>https://heisenbergv.github.io/post/2019/20190905-csapp2/</link>
+      <link>https://heisenbergv.github.io/post/2019/20190909-csapp2/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://heisenbergv.github.io/post/2019/20190905-csapp2/</guid>
+      <guid>https://heisenbergv.github.io/post/2019/20190909-csapp2/</guid>
       <description>高效的程序需要做到 合适的数据结构与算法 编写出编译器能够有效优化以转换成高效可执行代码的源码。 将运算量特别大的计算，可以分成多部分，这些部分可</description>
     </item>
     

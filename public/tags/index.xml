@@ -6,7 +6,7 @@
     <description>Recent content in Tags on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://heisenbergv.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,18 +14,9 @@
     <item>
       <title>csapp</title>
       <link>https://heisenbergv.github.io/tags/csapp/</link>
-      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heisenbergv.github.io/tags/csapp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技术</title>
-      <link>https://heisenbergv.github.io/tags/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://heisenbergv.github.io/tags/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
@@ -35,15 +26,6 @@
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heisenbergv.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>钢琴</title>
-      <link>https://heisenbergv.github.io/tags/%E9%92%A2%E7%90%B4/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://heisenbergv.github.io/tags/%E9%92%A2%E7%90%B4/</guid>
       <description></description>
     </item>
     
@@ -62,6 +44,15 @@
       <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heisenbergv.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>计划</title>
+      <link>https://heisenbergv.github.io/tags/%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/tags/%E8%AE%A1%E5%88%92/</guid>
       <description></description>
     </item>
     
