@@ -135,13 +135,12 @@ func main() {
 
 - Go运行时系统并没有内核调度器的中断能力(只有系统有),它只能通过向运行时间过长的G中设置抢占flag的方法温柔的让运行的G自己主动让出M的执行权,这里也说明了即使是抢占了但也不会出现线程不安全,因为他不是被突然中断的,而是执行完检测到flag再中断的.
 
-## 总结
-- go scheduler 公平高效合理的分配goroutine
-- goroutine不会有线程安全问题,但go使用了M:N模型,所以也需要关注线程安全问题.
-
 
 ## 参考
-- [惜暮 blog](https://blog.csdn.net/u010853261/article/details/84790392)
-- [Morsing's Blog](http://morsmachine.dk/go-scheduler)
-- [k2huang blog](https://github.com/k2huang/blogpost/blob/master/golang/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6/Go%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6.md)
-- [图片引自 k2huang blog](https://github.com/k2huang/blogpost/blob/master/golang/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6/Go%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6.md)
+[惜暮 blog](https://blog.csdn.net/u010853261/article/details/84790392)
+
+[Morsing's Blog](http://morsmachine.dk/go-scheduler)
+
+[k2huang blog](https://github.com/k2huang/blogpost/blob/master/golang/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6/Go%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6.md)
+
+[图片引自 k2huang blog](https://github.com/k2huang/blogpost/blob/master/golang/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6/Go%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6.md)

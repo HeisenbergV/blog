@@ -352,42 +352,9 @@ func close(){
 }
 ```
 
-
-### demo调试
-- 调试查看chan变量的结构值
-```go
-func run(ch chan int, a int) {
-	fmt.Println("send: ", a)
-	ch <- a
-	fmt.Println("send ok: ", a)
-}
-
-func channelFunc1() {
-	ch := make(chan int, 1)
-	ch <- 1
-	go run(ch, 2)
-	//buff  1
-	//sendq  go run
-	time.Sleep(time.Second * 1)
-	fmt.Println("sss: ", <-ch)
-	fmt.Println("sss: ", <-ch)
-	fmt.Println("sss: ", <-ch)
-}
-
-func run2(ch chan int) {
-	fmt.Println(<-ch)
-}
-
-func channelFunc2() {
-	ch := make(chan int, 1)
-	go run2(ch)
-	// recvq  go run2
-	time.Sleep(time.Second * 1)
-	ch <- 1
-}
-```
-
 ## 参考
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
+
 [恋恋美食 blog](https://my.oschina.net/renhc/blog/2246871)
+
 [draveness blog](https://draveness.me/)
