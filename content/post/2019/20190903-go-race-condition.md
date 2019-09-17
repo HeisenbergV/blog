@@ -128,7 +128,7 @@ println(unsafe.Sizeof(a)) // 0
     - 字典: 当我们想处理一些数据是否存在于字典的时候,我们只想关注key是否存在,value是不必要的,这时候可以用: map[string] struct{}
     - 信号: 当我们用channel来阻塞或者当一个信号触发的时候,我们只关注是否阻塞了,是否触发了,不在意传输的是什么信息: make(chan struct{})
 
-- 啊
+- 举例
 ```go
 //字典
 m := make(map[string]struct{})

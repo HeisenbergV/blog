@@ -6,10 +6,28 @@
     <description>Recent content in Posts on heisenberg blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://heisenbergv.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go Channel</title>
+      <link>https://heisenbergv.github.io/post/2019/20190917-go-channel/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/post/2019/20190917-go-channel/</guid>
+      <description>如何使用 channel在&amp;lt;-左边 表示向channel发送数据 channel在&amp;lt;-右边 表示从channel接收数据 close(channelName) 关闭一个cha</description>
+    </item>
+    
+    <item>
+      <title>Go Groutine</title>
+      <link>https://heisenbergv.github.io/post/2019/20190917-go-groutine/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heisenbergv.github.io/post/2019/20190917-go-groutine/</guid>
+      <description>并发与并行 并行(parallel): 指在同一时刻,有多条指令在多个处理器上同时执行(靠机器) 并发(concurrency): 指在同一时刻只能</description>
+    </item>
     
     <item>
       <title>读CSAPP(3) - 存储器层次结构</title>
@@ -71,7 +89,7 @@
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heisenbergv.github.io/post/2019/2019-plan/</guid>
-      <description>理财 《小狗钱钱》 《穷爸爸富爸爸》 《解读基金》 《好好赚钱》 《指数基金投资指南》 读书 《百年孤独》 《暗时间》 《局外人》 《别做正常的傻瓜》 《稀缺》 技</description>
+      <description>理财 《小狗钱钱》 《穷爸爸富爸爸》 《解读基金》 《好好赚钱》 《指数基金投资指南》 读书 《百年孤独》 《暗时间》 《稀缺》 《黑天鹅》 《别做正常的傻瓜》 技</description>
     </item>
     
   </channel>

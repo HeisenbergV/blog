@@ -3,36 +3,56 @@
   
   <url>
     <loc>https://heisenbergv.github.io/categories/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://heisenbergv.github.io/post/2019/20190917-go-channel/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://heisenbergv.github.io/post/2019/20190917-go-groutine/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://heisenbergv.github.io/post/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heisenbergv.github.io/tags/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heisenbergv.github.io/categories/coder/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/tags/csapp/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <loc>https://heisenbergv.github.io/tags/go/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://heisenbergv.github.io/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://heisenbergv.github.io/tags/csapp/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -59,12 +79,6 @@
   </url>
   
   <url>
-    <loc>https://heisenbergv.github.io/tags/go/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://heisenbergv.github.io/post/2019/20190827-csapp1/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,7 +87,7 @@
   
   <url>
     <loc>https://heisenbergv.github.io/categories/lighter/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,14 +119,14 @@
   
   <url>
     <loc>https://heisenbergv.github.io/post/2019/2019-plan/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://heisenbergv.github.io/tags/%E8%AE%A1%E5%88%92/</loc>
-    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
