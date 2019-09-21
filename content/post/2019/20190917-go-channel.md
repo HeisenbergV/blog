@@ -261,7 +261,6 @@ func makechan(t *chantype, size int) *hchan {
     - 如果缓冲区中没有空余位置，将待发送数据写入G，将当前G加入sendq，进入睡眠，等待被读goroutine唤醒；
 
 ```go
-//伪代码
 func chansend(msg){
 	if close !=0 {
 		panic("close")
@@ -297,7 +296,6 @@ func chansend(msg){
     
 
 ```go
-//伪代码
 func chanrecv(){
 	if sg:= sendq.dequeue(); sg != nil{
 		if buff <= 0 {
