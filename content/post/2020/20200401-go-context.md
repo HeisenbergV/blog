@@ -6,7 +6,7 @@ tags: [go]
 date: 2020-04-01
 ---
 
-
+https://juejin.im/post/5d6b5dc3e51d4561ce5a1c94
 1. 干什么的
 可以跟踪多个goroutine
 利用信号停止他们
