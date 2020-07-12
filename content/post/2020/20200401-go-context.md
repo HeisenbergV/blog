@@ -1,36 +1,81 @@
 
 ---
-title: "go Context"
+title: "源码阅读 - go Context"
 categories: [coder]
-tags: [go]
+tags: [go,源码]
 date: 2020-04-01
 ---
 
 https://juejin.im/post/5d6b5dc3e51d4561ce5a1c94
-1. 干什么的
-可以跟踪多个goroutine
-利用信号停止他们
+## Context有什么用
+当处理一个请求A，而这个请求需要在3秒内完成相应，A请求分别创建了B和C goroutine来处理逻辑，如果B或者C处理时间过长超过了3秒，那么继续执行显然是没必要且浪费资源。这时候就需要一个能终止他们的操作，而go没有提供类似 `goroutineID`这样的变量来记录goroutine状态。官方认为这样非常容易被滥用。所以Context就为此而来。
+1. 利用 channel/select ，以信号的方式来通知需要停止的goroutine
+2. 可以为Context记录一个key/value 来包含一些请求相关的信息
 
-2. 案例
-利用context 做trace
-利用context对多个goroutine进行信号停止
+``` go
 
-3. 源码分析
+func B(ctx context.Context) error {
+	for {
+		select {
+		case <-time.After(1 * time.Second):
+			fmt.Println("hello B")
+		case <-ctx.Done():
+			fmt.Println("b is end")
+			return ctx.Err()
+		}
+	}
+}
+
+func C(ctx context.Context) error {
+	for {
+		select {
+		case <-time.After(1 * time.Second):
+			fmt.Println("hello C")
+		case <-ctx.Done():
+			fmt.Println("b is end")
+			return ctx.Err()
+		}
+	}
+}
+
+func main() {
+	//创建一个有取消机制的context
+	ctx, cancle := context.WithCancel(context.Background())
+	//创建两个goroutine每秒打印一句话
+	go B(ctx)
+	go C(ctx)
+
+	//5秒后发出取消信号，停止B,C
+	time.Sleep(5 * time.Second)
+	cancle()
+	fmt.Println("end")
+}
+
+```
+
+## 源码分析
+```go
+//context.go
+type Context interface {
+	//
+	Deadline() (deadline time.Time, ok bool)
+	Done() <-chan struct{}
+	Err() error
+	Value(key interface{}) interface{}
+}
+```
+
 context包对外提供了5个api：
+```go
+//返回一个有取消
 func WithCancel(parent Context) (ctx Context, cancel CancelFunc)
 func WithDeadline(parent Context, d time.Time) (Context, CancelFunc)
 func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc)
 
 func Background() Context
 func TODO() Context
+```
 
-Context作为一个interface提供了四个api
-type Context interface {
-	Deadline() (deadline time.Time, ok bool)
-	Done() <-chan struct{}
-	Err() error
-	Value(key interface{}) interface{}
-}
 
 type emptyCtx int
 官方实现了一个默认结构，其实现的每一个api都不做任何逻辑，都返回空值。
@@ -125,7 +170,7 @@ func (c *cancelCtx) cancel(removeFromParent bool, err error) {
 done写入，这样就让所有在select Done()的地方都触发
 之后会对当前ctx全部child做同样操作，这里做了加锁操作，也是为了防止多个goroutine里对同一个ctx执行cancel
 
-总结
+## 总结
 只用cancelCtx，emptyCtx，timerCtx三个结构，简洁的代码实现了一个 goroutine之间的上下文。
 对于打印和value() 操作的是当前-根节点的ctx
 
@@ -140,3 +185,6 @@ type timerCtx struct {
 
 利用这样的方式 实现了继承
 利用函数签名相同实现了重写
+
+
+## 参考
