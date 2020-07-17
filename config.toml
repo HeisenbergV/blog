@@ -45,6 +45,13 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "tags"
   url = "/tags/"
 
+# [[menu.main]]
+#   name = "算法"
+#   weight = 40
+#   identifier = "alg"
+#   url = "/alg/"
+
+
 [[menu.main]]
   name = "分类"
   weight = 40

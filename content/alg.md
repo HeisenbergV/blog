@@ -1,8 +1,8 @@
 
 
 
-#### 技术背景
+#### wefafadf
 - GO / C# / Lua / C
-- Mysql / Redis 
+- Mysqlasdfadsf  / Redis 
 - Linux / Kafka /Docker
 ..
