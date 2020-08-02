@@ -6,7 +6,6 @@ tags: [go,源码]
 date: 2020-04-01
 ---
 
-https://juejin.im/post/5d6b5dc3e51d4561ce5a1c94
 ## Context有什么用
 当处理一个请求A，而这个请求需要在3秒内完成相应，A请求分别创建了B和C goroutine来处理逻辑，如果B或者C处理时间过长超过了3秒，那么继续执行显然是没必要且浪费资源。这时候就需要一个能终止他们的操作，而go没有提供类似 `goroutineID`这样的变量来记录goroutine状态。官方认为这样非常容易被滥用。所以Context就为此而来。
 1. 利用 channel/select ，以信号的方式来通知需要停止的goroutine
@@ -188,3 +187,4 @@ type timerCtx struct {
 
 
 ## 参考
+https://juejin.im/post/5d6b5dc3e51d4561ce5a1c94
