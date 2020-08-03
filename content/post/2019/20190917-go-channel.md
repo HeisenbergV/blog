@@ -1,6 +1,6 @@
 ---
 title: "Go Channel"
-categories: [coder]
+categories: [code]
 tags: [go]
 date: 2019-09-17
 ---
