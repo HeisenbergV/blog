@@ -5,8 +5,9 @@ title = "heisenberg blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
-theme = "hugo-theme-even"
+theme = "hugo-notepadium"
 enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+copyright = "©2020 heisenberg."
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -18,7 +19,27 @@ hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 5                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+
+[[params.nav.custom]]
+title = "Tags"
+url = "/tags/"
+
+[[params.nav.custom]]
+title = "Categories"
+url = "/categories/"
+
+[[params.nav.custom]]
+title = "About"
+url = "/about/"
+
+[params.math]
+enable = true # load math globally, default: false. You can always enable math on per page.
+use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 
 [author]                  # essential                     # 必需
   name = "heisenberg"
@@ -45,12 +66,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "tags"
   url = "/tags/"
 
-# [[menu.main]]
-#   name = "算法"
-#   weight = 40
-#   identifier = "alg"
-#   url = "/alg/"
-
 
 [[menu.main]]
   name = "分类"
@@ -64,6 +79,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "about"
   url = "/about/"
 
+## hugo-theme-even
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
