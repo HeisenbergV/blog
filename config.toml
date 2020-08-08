@@ -41,10 +41,6 @@ title = "Categories"
 url = "/categories/"
 
 [[params.nav.custom]]
-title = "About"
-url = "/about/"
-
-[[params.nav.custom]]
 title = "Github"
 url = "https://github.com/HeisenbergV"
 
