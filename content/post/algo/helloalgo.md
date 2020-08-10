@@ -11,6 +11,9 @@ date: 2020-05-01
 代码都在我的: [github](https://github.com/HeisenbergV/algo)
 
 我的: [leetcode](https://leetcode-cn.com/u/heisenbergv/)
+
+顺序： 按tag刷，难度从低到高
+
 ## 学习资料
 
 https://labuladong.gitbook.io/algo/
