@@ -1,7 +1,7 @@
 
 ---
 title: "算法-0"
-categories: [code,算法]
+categories: [计算机]
 tags: [算法]
 date: 2020-05-01
 ---
