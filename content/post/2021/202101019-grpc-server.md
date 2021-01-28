@@ -1,5 +1,5 @@
 ---
-title: "深入grpc"
+title: "grpc-go 源码-grpc server"
 categories: [计算机]
 tags: [grpc]
 date: 2021-01-19
@@ -36,6 +36,7 @@ func main(){
 ### NewServer
 NewServer进行创建一个grpc服务，初始化一些参数。还可以进行`函数选项模式`，来传递初始化的配置。
 默认情况下会建立一个以下参数的grpc服务：
+
 1. 接受数据最大4M
 2. 发送数据最大2g
 3. 连接超时120秒
@@ -71,6 +72,7 @@ func (s *Server) serveStreams(st transport.ServerTransport) {
 
 ### 注册函数
 利用反射，将具体实现的结构体和与之对应的函数存储到 grpcServer的`services`变量中
+
 - key: 结构体名称 （一般在pb文件里会根据proto生成）
 - value: 函数信息（调用函数的指针，函数名称，Metadata）
 
@@ -234,7 +236,6 @@ func (s *Server) handleStream(t transport.ServerTransport, stream *transport.Str
    2. 设置：metadata 存入context中
 4. 执行函数指针
 
-### 总结
 http2从tcp将数据报转换成http2认识的具体数据。之后grpc将http2的数据封装成grpc用到的stream结构中，还有一些参数`timeout`、`content-type`等封装到stream中的ctx中，到这里为止还没有对具体的请求数据做任何操作。
 
 ```go
