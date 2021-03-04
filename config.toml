@@ -21,7 +21,7 @@ disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 
 [params]
-slogan = "自信人生二百年 会当击水三千里"
+slogan = ""
 style = "auto" 
 
 [params.nav]
