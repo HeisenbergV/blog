@@ -1,13 +1,13 @@
 baseURL = "https://heisenbergv.github.io/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "heisenberg blog"
+title = "heisenbug blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-notepadium"
 enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
-copyright = "©2021 heisenberg"
+copyright = "©2021 heisenbug"
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -49,7 +49,7 @@ enable = true # load math globally, default: false. You can always enable math o
 use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 
 [author]                  # essential                     # 必需
-  name = "heisenberg"
+  name = "heisenbug"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
