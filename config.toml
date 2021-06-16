@@ -33,11 +33,15 @@ showTags = true             # /tags/
 enable = true
 
 [[params.nav.custom]]
-title = "Tags"
+title = "资治通鉴"
+url = "/categories/资治通鉴/"
+
+[[params.nav.custom]]
+title = "标签"
 url = "/tags/"
 
 [[params.nav.custom]]
-title = "Categories"
+title = "类别"
 url = "/categories/"
 
 [[params.nav.custom]]
