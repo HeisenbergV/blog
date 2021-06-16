@@ -34,7 +34,7 @@ enable = true
 
 [[params.nav.custom]]
 title = "资治通鉴"
-url = "/categories/资治通鉴/"
+url = "/tags/资治通鉴/"
 
 [[params.nav.custom]]
 title = "标签"
