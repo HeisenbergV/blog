@@ -32,9 +32,9 @@ showTags = true             # /tags/
 [params.comments]
 enable = true
 
-[[params.nav.custom]]
-title = "资治通鉴"
-url = "/tags/资治通鉴/"
+# [[params.nav.custom]]
+# title = "资治通鉴"
+# url = "/tags/资治通鉴/"
 
 [[params.nav.custom]]
 title = "标签"
