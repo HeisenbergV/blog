@@ -1,6 +1,6 @@
 ---
 title: "Go Groutine"
-categories: [计算机]
+categories: [coder]
 tags: [go]
 date: 2019-09-17
 ---

@@ -37,11 +37,11 @@ enable = true
 # url = "/tags/资治通鉴/"
 
 [[params.nav.custom]]
-title = "标签"
+title = "Tags"
 url = "/tags/"
 
 [[params.nav.custom]]
-title = "类别"
+title = "Categories"
 url = "/categories/"
 
 [[params.nav.custom]]
@@ -53,7 +53,7 @@ enable = true # load math globally, default: false. You can always enable math o
 use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 
 [author]                  # essential                     # 必需
-  name = "heisenbug"
+  name = "zJxin"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -92,6 +92,7 @@ use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 
 ## hugo-theme-even
 # [params]
+#  archivePaginate = 10
 #   version = "4.x"           # Used to give a friendly message when you have an incompatible update
 #   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
@@ -243,9 +244,9 @@ use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 #  isPlainText = true
 #  isHTML = false
 #
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
+[outputs]
+home = ["HTML", "RSS"]
+#   page = ["HTML", "MarkDown"]
+#   section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
 #  taxonomyTerm = ["HTML"]

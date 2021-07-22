@@ -1,6 +1,6 @@
 ---
 title: "Go 竞态问题"
-categories: [计算机]
+categories: [coder]
 tags: [go]
 date: 2019-09-03
 ---
