@@ -261,13 +261,8 @@ theme = "LoveIt"
       # Gitalk 评论系统设置
       [params.page.comment.gitalk]
         # LoveIt 新增 | 0.1.1
-        enable = true
-        owner = "HeisenbergV"
-        admin = "HeisenbergV"
-        repo = "heisenbergv.github.io"
-        clientId = "70335a4af07c4a97b79b"
-        clientSecret = "eddd76a8fd3679d1c9c9b734360c9db0ca6f4e1d"
-		
+        enable = false
+      
       # Valine 评论系统设置
       [params.page.comment.valine]
         enable = false
