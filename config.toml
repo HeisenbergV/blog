@@ -59,10 +59,10 @@ theme = "LoveIt"
   version = "0.2.X"
   
   # 网站描述
-  description = "个人笔记本"
+  description = "Blog"
   
    # 网站关键词
-  keywords = ["逆向", "破解"]
+  keywords = ["go", "计算机","思考"]
 	
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
@@ -177,9 +177,6 @@ theme = "LoveIt"
       enable = true
       # 主页每页显示文章数量
       paginate = 6
-      # LoveIt 删除 | 0.2.0 被 params.page 中的 hiddenFromHomePage 替代
-      # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
-      defaultHiddenFromHomePage = false
 	  
   # 作者的社交信息设置
   [params.social]
@@ -218,100 +215,6 @@ theme = "LoveIt"
       # 是否添加 FullscreenControl
       fullscreen = true
 	  
-  # LoveIt 更改 | 0.2.0 文章页面的分享信息设置
-    [params.page.share]
-      enable = false
-      #Twitter = true
-      #Facebook = true
-      #Linkedin = false
-      #Whatsapp = true
-      #Pinterest = false
-      #Tumblr = false
-      #HackerNews = false
-      #Reddit = false
-      #VK = false
-      #Buffer = false
-      #Xing = false
-      #Line = true
-      #Instapaper = false
-      #Pocket = false
-      #Digg = false
-      #Stumbleupon = false
-      #Flipboard = false
-      #Weibo = true
-      #Renren = false
-      #Myspace = true
-      #Blogger = true
-      #Baidu = false
-      #Odnoklassniki = false
-      #Evernote = true
-      #Skype = false
-      #Trello = false
-      #Mix = false
-
-    # LoveIt 更改 | 0.2.0 评论系统设置
-    [params.page.comment]
-      enable = true
-      # Disqus 评论系统设置
-      [params.page.comment.disqus]
-        # LoveIt 新增 | 0.1.1
-        enable = false
-        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-        shortname = ""
-      # Gitalk 评论系统设置
-      [params.page.comment.gitalk]
-        # LoveIt 新增 | 0.1.1
-        enable = false
-      
-      # Valine 评论系统设置
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-        # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
-        # "assets/data/emoji/"
-        emoji = ""
-		
-      # LoveIt 新增 | 0.2.0 Commento 评论系统设置
-      [params.page.comment.commento]
-        enable = false
-      # LoveIt 新增 | 0.2.5 Utterances 评论系统设置
-      [params.page.comment.utterances]
-        enable = false
-        # owner/repo
-        repo = ""
-        issueTerm = "pathname"
-        label = ""
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
-		
-    # LoveIt 新增 | 0.2.7 第三方库配置
-    [params.page.library]
-      [params.page.library.css]
-        # someCSS = "some.css"
-        # 位于 "assets/"
-        # 或者
-        # someCSS = "https://cdn.example.com/some.css"
-      [params.page.library.js]
-        # someJavascript = "some.js"
-        # 位于 "assets/"
-        # 或者
-        # someJavascript = "https://cdn.example.com/some.js"
-    # LoveIt 更改 | 0.2.10 页面 SEO 配置
-	
  # LoveIt 新增 | 0.2.5 TypeIt 配置
   [params.typeit]
     # 每一步的打字速度 (单位是毫秒)
