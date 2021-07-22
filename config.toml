@@ -1,4 +1,4 @@
-baseURL = "https://fjqisba.github.io"
+baseURL = "https://heisenbergv.github.io"
 
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
@@ -10,7 +10,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 
 # 网站标题
-title = "fjqisba的个人博客"
+title = "zJxin"
 
 
 # 更改使用 Hugo 构建网站时使用的默认主题
@@ -33,7 +33,7 @@ theme = "LoveIt"
     # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
     post = ""
     name = "文章"
-    url = "/post/"
+    url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
     title = ""
     weight = 1
@@ -53,14 +53,6 @@ theme = "LoveIt"
     url = "/categories/"
     title = ""
     weight = 3
-  [[menu.main]]
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "关于作者"
-    url = "/about/"
-    title = ""
-    weight = 4
 	
 [params]
   # LoveIt 主题版本
@@ -129,7 +121,6 @@ theme = "LoveIt"
   [params.footer]
     enable = true
     # LoveIt 新增 | 0.2.0 自定义内容 (支持 HTML 格式)
-    custom = 'fjqisba'
     # LoveIt 新增 | 0.2.0 是否显示 Hugo 和主题信息
     hugo = true
     # LoveIt 新增 | 0.2.0 是否显示版权信息
@@ -137,11 +128,11 @@ theme = "LoveIt"
     # LoveIt 新增 | 0.2.0 是否显示作者
     author = true
     # 网站创立年份
-    since = 2020
+    since = 2019
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
     icp = ""
     # 许可协议信息 (支持 HTML 格式)
-    license = 'MIT'
+    license = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND</a> '
 	
   # LoveIt 新增 | 0.2.0 Section (所有文章) 页面配置
   [params.section]
@@ -169,13 +160,13 @@ theme = "LoveIt"
     [params.home.profile]
       enable = true
       # 主页显示头像的 URL
-      avatarURL = "/images/QQImage.png"
+      avatarURL = "/img/head.jpg"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
-      title = ""
+      title = "Blog"
       # 主页显示的网站副标题
-      subtitle = "逆向爱好者的无名小站"
+      subtitle = "万物皆备于我 反身而诚 乐莫大焉"
       # 是否为副标题显示打字机动画
-      typeit = true
+      typeit = false
       # 是否显示社交账号
       social = true
       # LoveIt 新增 | 0.2.0 免责声明 (支持 HTML 格式)
@@ -192,69 +183,8 @@ theme = "LoveIt"
 	  
   # 作者的社交信息设置
   [params.social]
-    GitHub = "fjqisba"
-    Linkedin = ""
-    #Twitter = "xxxx"
-    #Instagram = "xxxx"
-    #Facebook = "xxxx"
-    #Telegram = "xxxx"
-    #Medium = ""
-    #Gitlab = ""
-    #Youtubelegacy = ""
-    #Youtubecustom = ""
-    #Youtubechannel = ""
-    #Tumblr = ""
-    #Quora = ""
-    #Keybase = ""
-    #Pinterest = ""
-    #Reddit = ""
-    #Codepen = ""
-    #FreeCodeCamp = ""
-    #Bitbucket = ""
-    #Stackoverflow = ""
-    #Weibo = ""
-    #Odnoklassniki = ""
-    #VK = ""
-    #Flickr = ""
-    #Xing = ""
-    #Snapchat = ""
-    #Soundcloud = ""
-    #Spotify = ""
-    #Bandcamp = ""
-    #Paypal = ""
-    #Fivehundredpx = ""
-    #Mix = ""
-    #Goodreads = ""
-    #Lastfm = ""
-    #Foursquare = ""
-    #Hackernews = ""
-    #Kickstarter = ""
-    #Patreon = ""
-    #Steam = ""
-    #Twitch = ""
-    #Strava = ""
-    #Skype = ""
-    #Whatsapp = ""
-    #Zhihu = ""
-    #Douban = ""
-    #Angellist = ""
-    #Slidershare = ""
-    #Jsfiddle = ""
-    #Deviantart = ""
-    #Behance = ""
-    #Dribbble = ""
-    #Wordpress = ""
-    #Vine = ""
-    #Googlescholar = ""
-    #Researchgate = ""
-    #Mastodon = ""
-    #Thingiverse = ""
-    #Devto = ""
-    #Gitea = ""
-    #XMPP = ""
-    #Matrix = ""
-    #Bilibili = ""
-    Email = "fjqisba@sohu.com"
+    GitHub = "HeisenbergV"
+    Email = "zuojxin@hotmail.com"
     RSS = true # LoveIt 新增 | 0.2.0
 	
    # LoveIt 更改 | 0.2.0 KaTeX 数学公式
@@ -399,8 +329,8 @@ theme = "LoveIt"
 
 # 作者配置
 [author]
-  name = "fjqisba"
-  email = "fjqisba@sohu.com"
+  name = "zJxin"
+  email = "zuojxin@hotmail.com"
   link = ""
   
 # 网站地图配置
