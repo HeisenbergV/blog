@@ -1,252 +1,414 @@
-baseURL = "https://heisenbergv.github.io/"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "zJxin Blog"
-preserveTaxonomyNames = true
-enableRobotsTXT = true
-enableEmoji = true
-theme = "hugo-notepadium"
-enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
-copyright = "©2021 zJxin"
+baseURL = "https://fjqisba.github.io"
 
-# Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
-pygmentsOptions = "linenos=table"
-pygmentsCodefences = true
-pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
+# [en, zh-cn, fr, ...] 设置默认的语言
+defaultContentLanguage = "zh-cn"
 
-hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 7                                              # 首页每页显示的文章数
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+# 网站语言, 仅在这里 CN 大写
+languageCode = "zh-CN"
 
+# 是否包括中日韩文字
+hasCJKLanguage = true
+
+# 网站标题
+title = "fjqisba的个人博客"
+
+
+# 更改使用 Hugo 构建网站时使用的默认主题
+theme = "LoveIt"
+
+
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+	
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "文章"
+    url = "/post/"
+    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "标签"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "关于作者"
+    url = "/about/"
+    title = ""
+    weight = 4
+	
 [params]
-slogan = ""
-style = "auto" 
+  # LoveIt 主题版本
+  version = "0.2.X"
+  
+  # 网站描述
+  description = "个人笔记本"
+  
+   # 网站关键词
+  keywords = ["逆向", "破解"]
+	
+  [params.app]
+    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+    title = "LoveIt"
+    # 是否隐藏网站图标资源链接
+    noFavicon = false
+    # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+    svgFavicon = ""
+    # Android 浏览器主题色
+    themeColor = "#ffffff"
+    # Safari 图标颜色
+    iconColor = "#5bbad5"
+    # Windows v8-10磁贴颜色
+    tileColor = "#da532c"
 
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
+  [params.search]
+    enable = true
+    # 搜索引擎的类型 ("lunr", "algolia")
+    type = "lunr"
+    # 文章内容最长索引长度
+    contentLength = 4000
+    # 搜索框的占位提示语
+    placeholder = ""
+    # LoveIt 新增 | 0.2.1 最大结果数目
+    maxResultLength = 10
+    # LoveIt 新增 | 0.2.3 结果内容片段长度
+    snippetLength = 50
+    # LoveIt 新增 | 0.2.1 搜索结果中高亮部分的 HTML 标签
+    highlightTag = "em"
+    # LoveIt 新增 | 0.2.4 是否在搜索索引中使用基于 baseURL 的绝对路径
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
 
+  [params.header]
+    # 桌面端导航栏模式 ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # 移动端导航栏模式 ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # LoveIt 新增 | 0.2.0 页面头部导航栏标题配置
+    [params.header.title]
+      # LOGO 的 URL
+      logo = ""
+      # 标题名称
+      name = "主页"
+      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+      pre = ""
+      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      post = ""
+      # LoveIt 新增 | 0.2.5 是否为标题显示打字机动画
+      typeit = false
+	  
+ # 页面底部信息配置
+  [params.footer]
+    enable = true
+    # LoveIt 新增 | 0.2.0 自定义内容 (支持 HTML 格式)
+    custom = 'fjqisba'
+    # LoveIt 新增 | 0.2.0 是否显示 Hugo 和主题信息
+    hugo = true
+    # LoveIt 新增 | 0.2.0 是否显示版权信息
+    copyright = true
+    # LoveIt 新增 | 0.2.0 是否显示作者
+    author = true
+    # 网站创立年份
+    since = 2020
+    # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+    icp = ""
+    # 许可协议信息 (支持 HTML 格式)
+    license = 'MIT'
+	
+  # LoveIt 新增 | 0.2.0 Section (所有文章) 页面配置
+  [params.section]
+    # section 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+    # RSS 文章数目
+    rss = 10
+	
+  # LoveIt 新增 | 0.2.0 List (目录或标签) 页面配置
+  [params.list]
+    # list 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+    # RSS 文章数目
+    rss = 10
+	
+  # 主页配置
+  [params.home]
+    # LoveIt 新增 | 0.2.0 RSS 文章数目
+    rss = 10
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      # 主页显示头像的 URL
+      avatarURL = "/images/QQImage.png"
+      # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
+      title = ""
+      # 主页显示的网站副标题
+      subtitle = "逆向爱好者的无名小站"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+      # LoveIt 新增 | 0.2.0 免责声明 (支持 HTML 格式)
+      disclaimer = ""
+	  
+    # 主页文章列表
+    [params.home.posts]
+      enable = true
+      # 主页每页显示文章数量
+      paginate = 6
+      # LoveIt 删除 | 0.2.0 被 params.page 中的 hiddenFromHomePage 替代
+      # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
+      defaultHiddenFromHomePage = false
+	  
+  # 作者的社交信息设置
+  [params.social]
+    GitHub = "fjqisba"
+    Linkedin = ""
+    #Twitter = "xxxx"
+    #Instagram = "xxxx"
+    #Facebook = "xxxx"
+    #Telegram = "xxxx"
+    #Medium = ""
+    #Gitlab = ""
+    #Youtubelegacy = ""
+    #Youtubecustom = ""
+    #Youtubechannel = ""
+    #Tumblr = ""
+    #Quora = ""
+    #Keybase = ""
+    #Pinterest = ""
+    #Reddit = ""
+    #Codepen = ""
+    #FreeCodeCamp = ""
+    #Bitbucket = ""
+    #Stackoverflow = ""
+    #Weibo = ""
+    #Odnoklassniki = ""
+    #VK = ""
+    #Flickr = ""
+    #Xing = ""
+    #Snapchat = ""
+    #Soundcloud = ""
+    #Spotify = ""
+    #Bandcamp = ""
+    #Paypal = ""
+    #Fivehundredpx = ""
+    #Mix = ""
+    #Goodreads = ""
+    #Lastfm = ""
+    #Foursquare = ""
+    #Hackernews = ""
+    #Kickstarter = ""
+    #Patreon = ""
+    #Steam = ""
+    #Twitch = ""
+    #Strava = ""
+    #Skype = ""
+    #Whatsapp = ""
+    #Zhihu = ""
+    #Douban = ""
+    #Angellist = ""
+    #Slidershare = ""
+    #Jsfiddle = ""
+    #Deviantart = ""
+    #Behance = ""
+    #Dribbble = ""
+    #Wordpress = ""
+    #Vine = ""
+    #Googlescholar = ""
+    #Researchgate = ""
+    #Mastodon = ""
+    #Thingiverse = ""
+    #Devto = ""
+    #Gitea = ""
+    #XMPP = ""
+    #Matrix = ""
+    #Bilibili = ""
+    Email = "fjqisba@sohu.com"
+    RSS = true # LoveIt 新增 | 0.2.0
+	
+   # LoveIt 更改 | 0.2.0 KaTeX 数学公式
+    [params.page.math]
+      enable = true
+      # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # 默认行内定界符是 $ ... $ 和 \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX 插件 copy_tex
+      copyTex = true
+      # KaTeX 插件 mhchem
+      mhchem = true
 
-[params.comments]
-enable = true
+  # LoveIt 新增 | 0.2.0 Mapbox GL JS 配置
+    [params.page.mapbox]
+      # Mapbox GL JS 的 access token
+      accessToken = ""
+      # 浅色主题的地图样式
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      # 深色主题的地图样式
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      # 是否添加 NavigationControl
+      navigation = true
+      # 是否添加 GeolocateControl
+      geolocate = true
+      # 是否添加 ScaleControl
+      scale = true
+      # 是否添加 FullscreenControl
+      fullscreen = true
+	  
+  # LoveIt 更改 | 0.2.0 文章页面的分享信息设置
+    [params.page.share]
+      enable = false
+      #Twitter = true
+      #Facebook = true
+      #Linkedin = false
+      #Whatsapp = true
+      #Pinterest = false
+      #Tumblr = false
+      #HackerNews = false
+      #Reddit = false
+      #VK = false
+      #Buffer = false
+      #Xing = false
+      #Line = true
+      #Instapaper = false
+      #Pocket = false
+      #Digg = false
+      #Stumbleupon = false
+      #Flipboard = false
+      #Weibo = true
+      #Renren = false
+      #Myspace = true
+      #Blogger = true
+      #Baidu = false
+      #Odnoklassniki = false
+      #Evernote = true
+      #Skype = false
+      #Trello = false
+      #Mix = false
 
-# [[params.nav.custom]]
-# title = "资治通鉴"
-# url = "/tags/资治通鉴/"
+    # LoveIt 更改 | 0.2.0 评论系统设置
+    [params.page.comment]
+      enable = true
+      # Disqus 评论系统设置
+      [params.page.comment.disqus]
+        # LoveIt 新增 | 0.1.1
+        enable = false
+        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
+        shortname = ""
+      # Gitalk 评论系统设置
+      [params.page.comment.gitalk]
+        # LoveIt 新增 | 0.1.1
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+		
+      # Valine 评论系统设置
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
+        # 可以在你的项目下相同路径存放你自己的数据文件:
+        # "assets/data/emoji/"
+        emoji = ""
+		
+      # LoveIt 新增 | 0.2.0 Commento 评论系统设置
+      [params.page.comment.commento]
+        enable = false
+      # LoveIt 新增 | 0.2.5 Utterances 评论系统设置
+      [params.page.comment.utterances]
+        enable = false
+        # owner/repo
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+		
+    # LoveIt 新增 | 0.2.7 第三方库配置
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # 位于 "assets/"
+        # 或者
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # 位于 "assets/"
+        # 或者
+        # someJavascript = "https://cdn.example.com/some.js"
+    # LoveIt 更改 | 0.2.10 页面 SEO 配置
+	
+ # LoveIt 新增 | 0.2.5 TypeIt 配置
+  [params.typeit]
+    # 每一步的打字速度 (单位是毫秒)
+    speed = 100
+    # 光标的闪烁速度 (单位是毫秒)
+    cursorSpeed = 1100
+    # 光标的字符 (支持 HTML 格式)
+    cursorChar = "|"
+    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    duration = 1000
 
-[[params.nav.custom]]
-title = "Tags"
-url = "/tags/"
-
-[[params.nav.custom]]
-title = "Categories"
-url = "/categories/"
-
-[[params.nav.custom]]
-title = "Github"
-url = "https://github.com/HeisenbergV"
-
-[params.math]
-enable = true # load math globally, default: false. You can always enable math on per page.
-use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
-
-[author]                  # essential                     # 必需
-  name = "zJxin"
-
-[sitemap]                 # essential                     # 必需
+# 作者配置
+[author]
+  name = "fjqisba"
+  email = "fjqisba@sohu.com"
+  link = ""
+  
+# 网站地图配置
+[sitemap]
   changefreq = "weekly"
-  priority = 0.5
   filename = "sitemap.xml"
-
-[[menu.main]]             # config your menu              # 配置目录
-  name = "主页"
-  weight = 10
-  identifier = "home"
-  url = "/"
-
-[[menu.main]]
-  name = "归档"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
-[[menu.main]]
-  name = "标签"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-
-
-[[menu.main]]
-  name = "分类"
-  weight = 40
-  identifier = "categories"
-  url = "/categories/"
-
-[[menu.main]]           
-  name = "关于"
-  weight = 50
-  identifier = "about"
-  url = "/about/"
-
-## hugo-theme-even
-# [params]
-#  archivePaginate = 10
-#   version = "4.x"           # Used to give a friendly message when you have an incompatible update
-#   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-
-#   since = "2019"            # Site creation time          # 站点建立时间
-#   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
-#   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
-#   gitRepo = ""
-
-#   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-#   logoTitle = "heisenberg"        # default: the title value    # 默认值: 上面设置的title值
-#   keywords = ["Hugo", "theme","even"]
-#   description = "Hugo theme even example site."
-
-#   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-#   archivePaginate = 10
-
-#   # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
-#   showArchiveCount = true
-
-#   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
-#   dateFormatToUse = "2006-01-02"
-
-#   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-#   moreMeta = false
-
-#   # Syntax highlighting by highlight.js
-#   highlightInClient = false
-
-#   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
-#   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-#   toc = true                                                                            # 是否开启目录
-#   autoCollapseToc = true   # Auto expand and collapse toc                              # 目录自动展开/折叠
-#   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-
-#   # mathjax
-#   mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-#   mathjaxEnableSingleDollar = true                                                     # 是否使用 $...$ 即可進行inline latex渲染
-#   mathjaxEnableAutoNumber = true                                                       # 是否使用公式自动编号
-#   mathjaxUseLocalFiles = false  # You should install mathjax in `yout-site/static/lib/mathjax`
-
-#   postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
-#   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-#   contentCopyright = '除特别声明外文章，均采用<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND</a> 转载请注明出处'   
-
-#   changyanAppid = ""        # Changyan app id             # 畅言
-#   changyanAppkey = ""       # Changyan app key
-
-#   livereUID = ""            # LiveRe UID                  # 来必力
-
-#   baiduPush = true        # baidu push                  # 百度
-#   baiduAnalytics = ""      # Baidu Analytics
-#   baiduVerification = ""   # Baidu Verification
-#   googleVerification = ""  # Google Verification         # 谷歌
-
-#   # Link custom CSS and JS assets
-#   #   (relative to /static/css and /static/js respectively)
-#   customCSS = []
-#   customJS = []
-
-#   uglyURLs = false          # please keep same with uglyurls setting
-
-#   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-#     enable = true
-#     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
-#     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
-#     fancyboxJS = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
-#     fancyboxCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
-#     timeagoJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>'
-#     timeagoLocalesJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>'
-#     flowchartDiagramsJS = '<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script>'
-#     sequenceDiagramsCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">'
-#     sequenceDiagramsJS = '<script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>'
-
-#   # Display a message at the beginning of an article to warn the readers that it's content may be outdated.
-#   # 在文章开头显示提示信息，提醒读者文章内容可能过时。
-#   [params.outdatedInfoWarning]
-#     enable = false
-#     hint = 30               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
-#     warn = 180              # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
-
-#   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-#     owner = "heisenbergv"              # Your GitHub ID
-#     repo = "heisenbergv.github.io"               # The repo to store comments
-#     clientId = "70335a4af07c4a97b79b"           # Your client ID
-#     clientSecret = "6c0684397ec265598fead8d27242c273d151bd1e"       # Your client secret
-
-#   [params.utterances]       # https://utteranc.es/
-#     owner = ""              # Your GitHub ID
-#     repo = ""               # The repo to store comments
-
-#   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-#     owner = ""              # Your GitHub ID
-#     repo = ""               # The repo to store comments
-#     clientId = ""           # Your client ID
-#     clientSecret = ""       # Your client secret
-
-#   # Valine.
-#   # You can get your appid and appkey from https://leancloud.cn
-#   # more info please open https://valine.js.org
-#   [params.valine]
-#     enable = false
-#     appId = '你的appId'
-#     appKey = '你的appKey'
-#     notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-#     verify = false # Verification code
-#     avatar = 'mm' 
-#     placeholder = '说点什么吧...'
-#     visitor = false
-
-#   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-#     enable = false
-#     options = ""
-
-#   [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
-#     enable = false
-#     options = ""            # default: "{theme: 'simple'}"
-
-#   [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
-#     enable = false
-#     siteUV = true
-#     sitePV = true
-#     pagePV = true
-
-#   [params.reward]                                         # 文章打赏
-#     enable = false
-#     wechat = "static/wx.png"           # 微信二维码
-#     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
-
-#   [params.social]                                         # 社交链接
-#     a-email = "zuojxin@hotmail.com"
-#     c-twitter = "https://twitter.com/Vdemoot"
-#     g-github = "https://github.com/HeisenbergV/heisenbergv.github.io"
-
-# See https://gohugo.io/about/hugo-and-gdpr/
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true      # 12.214.31.144 -> 12.214.31.0
-  [privacy.youtube]
-    privacyEnhanced = true
-
-# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffixes = ["md"]
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
+  priority = 0.5
+  
+ 
 [outputs]
-home = ["HTML", "RSS"]
-#   page = ["HTML", "MarkDown"]
-#   section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
+  home = ["HTML", "RSS", "JSON"]
