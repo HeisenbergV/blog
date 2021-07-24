@@ -57,7 +57,8 @@ theme = "LoveIt"
 [params]
   # LoveIt 主题版本
   version = "0.2.X"
-  
+  # 网站默认主题 ("light", "dark", "auto")
+  defaultTheme = "light"
   # 网站描述
   description = "Blog"
   
@@ -101,7 +102,7 @@ theme = "LoveIt"
 
   [params.header]
     # 桌面端导航栏模式 ("fixed", "normal", "auto")
-    desktopMode = "fixed"
+    desktopMode = "auto"
     # 移动端导航栏模式 ("fixed", "normal", "auto")
     mobileMode = "auto"
     # LoveIt 新增 | 0.2.0 页面头部导航栏标题配置
