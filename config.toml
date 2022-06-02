@@ -165,7 +165,7 @@ theme = "LoveIt"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = "Blog"
       # 主页显示的网站副标题
-      subtitle = "反者道之动"
+      subtitle = "种地的"
       # 是否为副标题显示打字机动画
       typeit = false
       # 是否显示社交账号
@@ -177,7 +177,7 @@ theme = "LoveIt"
     [params.home.posts]
       enable = true
       # 主页每页显示文章数量
-      paginate = 6
+      paginate = 10
 	  [params.page.code]
       # 是否显示代码块的复制按钮
       copy = true
