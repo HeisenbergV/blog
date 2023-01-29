@@ -138,7 +138,7 @@ theme = "LoveIt"
   # LoveIt 新增 | 0.2.0 Section (所有文章) 页面配置
   [params.section]
     # section 页面每页显示文章数量
-    paginate = 10
+    paginate = 20
     # 日期格式 (月和日)
     dateFormat = "01-02"
     # RSS 文章数目
