@@ -147,7 +147,7 @@ theme = "LoveIt"
   description = "Blog"
   
    # 网站关键词
-  keywords = ["go", "计算机","思考"]
+  keywords = ["go", "计算机","ai"]
 	
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
